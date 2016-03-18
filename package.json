@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start"
   },
-  "author": "Nathan Thompson <nathan.thompson@readytalk.com> (https://github.com/thompsnm)",
+  "author": "Nathan Thompson <thompsnm@gmail.com> (https://github.com/thompsnm)",
   "license": "ISC",
   "devDependencies": {
     "karma": "^0.13.22",
