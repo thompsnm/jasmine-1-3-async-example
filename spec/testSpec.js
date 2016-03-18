@@ -6,7 +6,7 @@ var testObj = {
   myMethod: function() {
     this.something.done(function() {
       this.doSomethingElse();
-    });
+    }.bind(this));
   }
 }
 
@@ -19,7 +19,7 @@ describe('async testing', function() {
       testObj.something = mockDefer;
       spyOn(testObj, 'doSomethingElse');
       testObj.myMethod();
-      mockDefer.resolve.call(testObj, 'someVal');
+      mockDefer.resolve();
     });
 
     waitsFor(function() {
